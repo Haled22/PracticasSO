@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|c:\\users\\haled\\2024a\\so\\practica3p3\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica3P3\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica3P3\\practica1\\input_window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica3P3\\practica1\\proceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\proceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "input_window.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.Designer.cs",
+              "RelativeDocumentMoniker": "Practica1\\input_window.Designer.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.Designer.cs",
+              "RelativeToolTip": "Practica1\\input_window.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T20:56:30.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Proceso.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\Proceso.cs",
+              "RelativeDocumentMoniker": "Practica1\\Proceso.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\Proceso.cs",
+              "RelativeToolTip": "Practica1\\Proceso.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T20:03:52.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "input_window.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.cs",
+              "RelativeDocumentMoniker": "Practica1\\input_window.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.cs",
+              "RelativeToolTip": "Practica1\\input_window.cs",
+              "ViewState": "AQIAAAYCAAAAAAAAAAAowBwCAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T20:03:52.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input_window.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.cs",
+              "RelativeDocumentMoniker": "Practica1\\input_window.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica3P3\\Practica1\\input_window.cs [Design]",
+              "RelativeToolTip": "Practica1\\input_window.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T20:03:52.951Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
