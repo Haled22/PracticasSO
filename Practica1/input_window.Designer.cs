@@ -79,6 +79,8 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblQuant = new System.Windows.Forms.Label();
+            this.quantInput = new System.Windows.Forms.TextBox();
             this.ProcessesTable.SuspendLayout();
             this.processes.SuspendLayout();
             this.groupBoxInProgress.SuspendLayout();
@@ -101,6 +103,8 @@
             // processes
             // 
             this.processes.BackColor = System.Drawing.Color.SeaShell;
+            this.processes.Controls.Add(this.quantInput);
+            this.processes.Controls.Add(this.lblQuant);
             this.processes.Controls.Add(this.inputNumProcesses);
             this.processes.Controls.Add(this.lblNumProcesses);
             this.processes.Controls.Add(this.blockedTimer3);
@@ -532,6 +536,22 @@
             this.columnHeader9.Text = "Servicio";
             this.columnHeader9.Width = 82;
             // 
+            // lblQuant
+            // 
+            this.lblQuant.AutoSize = true;
+            this.lblQuant.Location = new System.Drawing.Point(431, 61);
+            this.lblQuant.Name = "lblQuant";
+            this.lblQuant.Size = new System.Drawing.Size(60, 16);
+            this.lblQuant.TabIndex = 21;
+            this.lblQuant.Text = "Quantum";
+            // 
+            // quantInput
+            // 
+            this.quantInput.Location = new System.Drawing.Point(431, 80);
+            this.quantInput.Name = "quantInput";
+            this.quantInput.Size = new System.Drawing.Size(166, 22);
+            this.quantInput.TabIndex = 22;
+            // 
             // input_window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -541,7 +561,7 @@
             this.Controls.Add(this.ProcessesTable);
             this.KeyPreview = true;
             this.Name = "input_window";
-            this.Text = "Practica 4";
+            this.Text = "Practica 5";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.input_window_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.input_window_KeyPress);
@@ -608,6 +628,8 @@
         private System.Windows.Forms.Label _newProcesses;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.TextBox quantInput;
+        private System.Windows.Forms.Label lblQuant;
     }
 }
 

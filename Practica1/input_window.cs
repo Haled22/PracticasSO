@@ -23,9 +23,7 @@ namespace Practica1
     public partial class input_window : Form
     {
         // Variables para tiempos
-        DateTime tiempoLlegada;
-        DateTime tiempoFinalizacion;
-        DateTime tiempoDePrimeraAtencion;
+      
 
         Queue<Proceso> _Procesos = new Queue<Proceso>();//Se crea la lista de procesos
         Queue<Proceso> _lotes = new Queue<Proceso>();
@@ -39,8 +37,9 @@ namespace Practica1
         int contLabelToBeUsed = 0;
         bool processStart = true;
         int addedProcesses = 0;
-        int number_processes = 0;
+        int number_processes = 10;
         bool stop = true;
+        int quantTime = 3;
         bool showTable = false;
         bool paused = false;
         bool interrupcion = false;
@@ -152,7 +151,7 @@ namespace Practica1
 
 
                 System.Console.WriteLine("Hola");
-                number_processes = random.Next(7, 18);
+                number_processes = random.Next(7, 18);//18
             }
             const String _operaciones = "+-/*";
             
@@ -163,6 +162,8 @@ namespace Practica1
                 _Procesos.ElementAt(i).TimeMax = random.Next(7, 18);
                 _Procesos.ElementAt(i).Id = i.ToString();
                 _Procesos.ElementAt(i).OpName = ""+random.Next(0, 100) + _operaciones[random.Next(0, 3)] + random.Next(0, 100);
+                _Procesos.ElementAt(i).QuantTime =quantTime;
+                System.Console.WriteLine(quantTime);
                 
                  
                 
@@ -190,17 +191,15 @@ namespace Practica1
         {
             int initialValue = 0;
             stop = false;
-            interruptedProcesses.Clear();
-            finishedProcesses.Clear();
-            FillList();
-            System.Console.WriteLine(_Procesos.Count);
+            
             for (int i = 0; i < _count; i++)// Se ajustan los tamaños de las barras dependiendo de cuantas necesitemos
             {
-                if(number_processes>i)
+                if (number_processes > i)
                 {
                     _Procesos.ElementAt(i).IntLabel = labelsUsed.ElementAt((int)_labelsUsedEnum.blocked1 + i);
                     _Procesos.ElementAt(i).IndexLabel = (int)_labelsUsedEnum.blocked1 + i;
-                    _Procesos.ElementAt(i).GBox = _display_options.ElementAt(i);
+                    _Procesos.ElementAt(i).GBox = _display_options.ElementAt(i);    
+                  
                 }
                 else
                 {
@@ -210,30 +209,42 @@ namespace Practica1
                     newPro.GBox = _display_options.ElementAt(i);
                     availableOptions.Enqueue(newPro);
                 }
-
-
+                changeLabel((_Procesos.Count + _lotes.Count + interruptedProcesses.Count).ToString(), _labelsUsedEnum.lotesOutput);
+                changeLabel((_Procesos.Count).ToString(), _labelsUsedEnum.contNewProc);
             }
             changeLabel((_Procesos.Count + _lotes.Count + interruptedProcesses.Count).ToString(), _labelsUsedEnum.lotesOutput);
             changeLabel((_Procesos.Count).ToString(), _labelsUsedEnum.contNewProc);
-            while (_Procesos.Count + interruptedProcesses.Count > 0 || _lotes.Count>0)
+            while (_Procesos.Count + interruptedProcesses.Count > 0 || _lotes.Count > 0)
             {
                 
-                if (_lotes.Count+interruptedProcesses.Count <3 && _Procesos.Count > 0)
+
+                if (_lotes.Count + interruptedProcesses.Count < 3 && _Procesos.Count > 0)
                 {
-                    _lotes.Enqueue(_Procesos.Dequeue());
-                    changeLabel((_Procesos.Count).ToString(), _labelsUsedEnum.contNewProc);
-                    _lotes.Last().ArrivalTime = DateTime.Now;
-                    if (_lotes.Last().TimeMax > 15)
+                    for (int i = 0; _lotes.Count + interruptedProcesses.Count < 3 && _Procesos.Count > 0; i++)
                     {
-                        
-                        reSize(_lotes.Last().GBox, 15 * 10 + 10);
+                        _lotes.Enqueue(_Procesos.Dequeue());
+                        if (availableOptions.Count > 0)
+                        {
+                            _lotes.Last().IntLabel = availableOptions.First().IntLabel;
+                            _lotes.Last().GBox = availableOptions.First().GBox;
+                            _lotes.Last().IndexLabel = availableOptions.First().IndexLabel;
+                            availableOptions.Dequeue();
+                        }
+                        if (_lotes.Last().TimeMax > 15)
+                        {
+
+                            reSize(_lotes.Last().GBox, 15 * 10 + 10);
+                        }
+                        else
+                        {
+                            reSize(_lotes.Last().GBox, _lotes.Last().TimeMax * 10 + 10);
+                        }
+
                     }
-                    else
-                    {
-                        reSize(_lotes.Last().GBox, _lotes.Last().TimeMax * 10 + 10);
-                    }
-                    _lotes.Last().GBox.BackColor = Color.LimeGreen;
+
                 }
+            
+               
                 if (processStart)
                 {
                     if (_lotes.Count > 0)
@@ -244,18 +255,15 @@ namespace Practica1
                         {
                             _lotes.First().ResponseTime = DateTime.Now - _lotes.First().ArrivalTime;
                             _lotes.First().WaitTime = _lotes.First().ResponseTime;
-
-
                         }
                         // Se asigna el tiempo de primera atención
-                        if (initialValue == 0) { tiempoDePrimeraAtencion = tiempoLlegada; }
+                       
                         _lotes.First().Status = "Listo";
+                        _lotes.First().QuantTime = quantTime;
                         initialValue = setNewProcess(initialValue);
                         SetText(initialValue.ToString());
                         processStart = false;
-                    }
-                     
-                    
+                    }    
                 }
 
                 if (interrupcion)
@@ -268,17 +276,13 @@ namespace Practica1
                     if (_lotes.Count > 0)
                     {
 
-
-                        
-
                         initialValue = setNewProcess(initialValue);
                     }
                     interruptedProcesses.Last().GBox.BackColor = Color.LightCoral;
                     processStart = true;
                     interrupcion = false;
-
-
                 }
+                
                 if (error)
                 {
                     _lotes.First().GBox.BackColor = Color.DimGray;
@@ -294,8 +298,6 @@ namespace Practica1
                     SetList(_lotes.Dequeue());
                     error = false;
                     processStart = true;
-                   
-
                 }
                 while(paused)
                 {
@@ -316,12 +318,10 @@ namespace Practica1
                         Thread.Sleep(100);
                         globalTimer();
                         initialValue--;
+                        _lotes.First().QuantTime = _lotes.First().QuantTime- 1;
                         changeLabel(string.Format("{0}:{1}:{2}", h.ToString().PadLeft(2, '0'), m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0')), _labelsUsedEnum.time);
                         changeLabel(initialValue.ToString(), _labelsUsedEnum.timerProcc);
-
-
-                        //Para motivos de pruebas lo tengo en 100 pero deberia ser 1000 <---
-                        
+                        //Para motivos de pruebas lo tengo en 100 pero deberia ser 1000 <---    
                     });
                     _lotes.First().ServiceTime = DateTime.Now - _lotes.First().ArrivalTime;
                     System.Console.WriteLine(DateTime.Now - _lotes.First().ArrivalTime);
@@ -330,10 +330,6 @@ namespace Practica1
                 
                 else
                 {
-
-                    
-
-
                     if (initialValue > 15 && _lotes.Count!=0)
                     {
                         reSize(_lotes.First().GBox, 15 * 10 + 10);
@@ -349,23 +345,38 @@ namespace Practica1
 
                         if (_Procesos.Count() > 0)
                         {
-                            _Procesos.First().IntLabel = _lotes.First().IntLabel;
-                            _Procesos.First().GBox = _lotes.First().GBox;
-                            _Procesos.First().IndexLabel = _lotes.First().IndexLabel;
+                            if (_Procesos.First().IntLabel == null && availableOptions.Count > 0)
+                            {
+                                _Procesos.First().IntLabel = availableOptions.First().IntLabel;
+                                _Procesos.First().GBox = availableOptions.First().GBox;
+                                _Procesos.First().IndexLabel = availableOptions.First().IndexLabel;
+                                availableOptions.Dequeue();
+                                //Revise soon
+
+                            }
+
 
                         }
-                        else
-                        {
-                            availableOptions.Enqueue(_lotes.First());
-                            _lotes.First().GBox.BackColor = Color.DimGray;
-                        }
+                        
+                        availableOptions.Enqueue(_lotes.First());
+
+                        _lotes.First().GBox.BackColor = Color.LimeGreen;
+                        
                         _lotes.First().FinishTime = DateTime.Now;
                         _lotes.First().ReturnTime = _lotes.First().FinishTime - _lotes.First().ArrivalTime;
                         _lotes.First().ServiceTime = _lotes.First().ReturnTime;
                         _lotes.First().Status = "Terminado";
                         finishedProcesses.Enqueue(_lotes.First());
+                        
+                        reSize(finishedProcesses.Last().GBox, 10);
+                        if(_Procesos.Count==0)
+                        {
+                            finishedProcesses.First().GBox.BackColor = Color.DimGray;
+                        }
+                        
+                        
                         SetList(_lotes.Dequeue());
-
+                       
 
                         changeLabel((_Procesos.Count + _lotes.Count + interruptedProcesses.Count).ToString(), _labelsUsedEnum.lotesOutput);
                         changeLabel((_Procesos.Count).ToString(), _labelsUsedEnum.contNewProc);
@@ -398,6 +409,39 @@ namespace Practica1
                         interruptedProcesses.First().Status = "Nuevo";
                         _lotes.Enqueue(interruptedProcesses.Dequeue());
                         _lotes.Last().GBox.BackColor = Color.LimeGreen;
+                    }
+                }
+                if(_lotes.Count()>0)
+                { 
+                    if (_lotes.First().QuantTime == 0)
+                    {
+                        //Work in progress
+
+                        if (_Procesos.Count() > 0)
+                        {
+                            _Procesos.First().IntLabel = _lotes.First().IntLabel;
+                            _Procesos.First().GBox = _lotes.First().GBox;
+                            _Procesos.First().IndexLabel = _lotes.First().IndexLabel;
+
+                        }
+
+                        _lotes.First().TimeMax -= quantTime;
+                        _lotes.First().QuantTime = quantTime;
+                        _lotes.First().GBox.BackColor = Color.LimeGreen;
+                        _lotes.Enqueue(_lotes.Dequeue());
+
+                        if (_lotes.First().TimeMax > 15)
+                        {
+
+                            reSize(_lotes.First().GBox, 15 * 10 + 10);
+                        }
+                        else
+                        {
+                            reSize(_lotes.First().GBox, _lotes.First().TimeMax * 10 + 10);
+                        }
+
+                        processStart = true;
+
                     }
                 }
 
@@ -437,11 +481,18 @@ namespace Practica1
                 h = 0;
                 s = 0;
                 m = 0;
-               
-                if(int.TryParse(inputNumProcesses.Text, out _))
+                
+                if (int.TryParse(inputNumProcesses.Text,out _))        
                 {
                     number_processes = int.Parse(inputNumProcesses.Text);
                 }
+                if (int.TryParse(quantInput.Text,out _))
+                {
+                     quantTime = int.Parse(quantInput.Text);
+                }
+                interruptedProcesses.Clear();
+                finishedProcesses.Clear();
+                FillList();
                 Thread _ThreadProcesses = new Thread(new ThreadStart(FCFSSchedulling));
                 reSize(_display_options.ElementAt(0), 150);
                 reSize(_display_options.ElementAt(1), 150);
@@ -631,7 +682,7 @@ namespace Practica1
 
                     _Procesos.Enqueue(newProcess);
                     changeLabel((_Procesos.Count + _lotes.Count + interruptedProcesses.Count).ToString(), _labelsUsedEnum.lotesOutput);
-                    changeLabel((_Procesos.Count).ToString()+addedProcesses, _labelsUsedEnum.contNewProc);
+                    changeLabel((_Procesos.Count).ToString(), _labelsUsedEnum.contNewProc);
                     addedProcesses += 1;
                 }
             }

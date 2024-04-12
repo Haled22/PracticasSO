@@ -17,6 +17,7 @@ namespace Practica1
         private int _intTime;
         private Label _intLabel;
         private int _indexLabel;
+        private int _quantTime;
         private DateTime _arrivalTime;//Hora de llegada
         private DateTime _finishTime;//Hora en la que se finalizo
         private TimeSpan _returnTime;//Timepo total desde que llega hasta que termina
@@ -76,6 +77,11 @@ namespace Practica1
         {
             get { return _indexLabel; }
             set { _indexLabel = value; }
+        }
+        public int QuantTime
+        {
+            get { return _quantTime; }
+            set { _quantTime = value; }
         }
         public Label IntLabel
         {
