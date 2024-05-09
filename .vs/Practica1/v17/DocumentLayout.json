@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\",
+  "WorkspaceRootPath": "C:\\Users\\haled\\2024A\\SO\\Practica7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|c:\\users\\haled\\2024a\\so\\practica5tryingshtuff\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|c:\\users\\haled\\2024a\\so\\practica7\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\practica1\\input_window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica7\\practica1\\input_window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\practica1\\proceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica7\\practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\input_window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|C:\\Users\\haled\\2024A\\SO\\Practica7\\practica1\\proceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75CA4667-D5A7-417C-9967-1C29154A2F16}|Practica1\\Practica1.csproj|solutionrelative:practica1\\proceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +30,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "input_window.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.cs",
               "RelativeDocumentMoniker": "Practica1\\input_window.cs",
-              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.cs [Design]",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.cs [Design]",
               "RelativeToolTip": "Practica1\\input_window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T23:37:19.839Z",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "input_window.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.Designer.cs",
               "RelativeDocumentMoniker": "Practica1\\input_window.Designer.cs",
-              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.Designer.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.Designer.cs",
               "RelativeToolTip": "Practica1\\input_window.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAIkGAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T20:56:30.763Z",
               "EditorCaption": ""
@@ -57,11 +57,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Proceso.cs",
-              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\Proceso.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\Proceso.cs",
               "RelativeDocumentMoniker": "Practica1\\Proceso.cs",
-              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\Proceso.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\Proceso.cs",
               "RelativeToolTip": "Practica1\\Proceso.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA/wFIAAAAjAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAgwCEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T20:03:52.948Z",
               "EditorCaption": ""
@@ -70,11 +70,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "input_window.cs",
-              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.cs",
+              "DocumentMoniker": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.cs",
               "RelativeDocumentMoniker": "Practica1\\input_window.cs",
-              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica5Tryingshtuff\\Practica1\\input_window.cs",
+              "ToolTip": "C:\\Users\\haled\\2024A\\SO\\Practica7\\Practica1\\input_window.cs",
               "RelativeToolTip": "Practica1\\input_window.cs",
-              "ViewState": "AQIAALYAAAAAAAAAAAAIwNQAAABXAAAA",
+              "ViewState": "AQIAABIBAAAAAAAAAAAEwCMBAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-22T20:03:52.684Z",
               "EditorCaption": ""

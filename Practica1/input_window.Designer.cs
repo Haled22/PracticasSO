@@ -30,6 +30,10 @@
         {
             this.ProcessesTable = new System.Windows.Forms.TabControl();
             this.processes = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.quantLbl = new System.Windows.Forms.Label();
+            this.quantInput = new System.Windows.Forms.TextBox();
+            this.lblQuant = new System.Windows.Forms.Label();
             this.inputNumProcesses = new System.Windows.Forms.TextBox();
             this.lblNumProcesses = new System.Windows.Forms.Label();
             this.blockedTimer3 = new System.Windows.Forms.Label();
@@ -49,6 +53,8 @@
             this.waitT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.serviceT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBoxInProgress = new System.Windows.Forms.GroupBox();
+            this._lblSizeProcess = new System.Windows.Forms.Label();
+            this._sizeProcess = new System.Windows.Forms.Label();
             this._lblnewProcesses = new System.Windows.Forms.Label();
             this._newProcesses = new System.Windows.Forms.Label();
             this._contLotesOutput = new System.Windows.Forms.Label();
@@ -79,12 +85,93 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lblQuant = new System.Windows.Forms.Label();
-            this.quantInput = new System.Windows.Forms.TextBox();
+            this.tabPage = new System.Windows.Forms.TabPage();
+            this.marco36 = new System.Windows.Forms.Panel();
+            this.marco35 = new System.Windows.Forms.Panel();
+            this.marco30 = new System.Windows.Forms.Panel();
+            this.marco32 = new System.Windows.Forms.Panel();
+            this.marco25 = new System.Windows.Forms.Panel();
+            this.marco34 = new System.Windows.Forms.Panel();
+            this.marco27 = new System.Windows.Forms.Panel();
+            this.marco31 = new System.Windows.Forms.Panel();
+            this.marco29 = new System.Windows.Forms.Panel();
+            this.marco33 = new System.Windows.Forms.Panel();
+            this.marco28 = new System.Windows.Forms.Panel();
+            this.marco18 = new System.Windows.Forms.Panel();
+            this.marco20 = new System.Windows.Forms.Panel();
+            this.marco24 = new System.Windows.Forms.Panel();
+            this.marco22 = new System.Windows.Forms.Panel();
+            this.marco26 = new System.Windows.Forms.Panel();
+            this.marco16 = new System.Windows.Forms.Panel();
+            this.marco6 = new System.Windows.Forms.Panel();
+            this.marco8 = new System.Windows.Forms.Panel();
+            this.marco12 = new System.Windows.Forms.Panel();
+            this.marco10 = new System.Windows.Forms.Panel();
+            this.marco14 = new System.Windows.Forms.Panel();
+            this.marco23 = new System.Windows.Forms.Panel();
+            this.marco11 = new System.Windows.Forms.Panel();
+            this.marco19 = new System.Windows.Forms.Panel();
+            this.marco7 = new System.Windows.Forms.Panel();
+            this.marco21 = new System.Windows.Forms.Panel();
+            this.marco9 = new System.Windows.Forms.Panel();
+            this.marco17 = new System.Windows.Forms.Panel();
+            this.marco5 = new System.Windows.Forms.Panel();
+            this.marco15 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.marco13 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.marco4 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.marco3 = new System.Windows.Forms.Panel();
+            this.marco2 = new System.Windows.Forms.Panel();
+            this.marco1 = new System.Windows.Forms.Panel();
+            this.num4 = new System.Windows.Forms.Label();
+            this.num3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.num2 = new System.Windows.Forms.Label();
+            this.num1 = new System.Windows.Forms.Label();
+            this.numMarco1 = new System.Windows.Forms.Label();
             this.ProcessesTable.SuspendLayout();
             this.processes.SuspendLayout();
             this.groupBoxInProgress.SuspendLayout();
             this.processTableTab.SuspendLayout();
+            this.tabPage.SuspendLayout();
+            this.marco4.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProcessesTable
@@ -94,6 +181,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProcessesTable.Controls.Add(this.processes);
             this.ProcessesTable.Controls.Add(this.processTableTab);
+            this.ProcessesTable.Controls.Add(this.tabPage);
             this.ProcessesTable.Location = new System.Drawing.Point(0, 1);
             this.ProcessesTable.Name = "ProcessesTable";
             this.ProcessesTable.SelectedIndex = 0;
@@ -103,6 +191,8 @@
             // processes
             // 
             this.processes.BackColor = System.Drawing.Color.SeaShell;
+            this.processes.Controls.Add(this.label5);
+            this.processes.Controls.Add(this.quantLbl);
             this.processes.Controls.Add(this.quantInput);
             this.processes.Controls.Add(this.lblQuant);
             this.processes.Controls.Add(this.inputNumProcesses);
@@ -129,6 +219,40 @@
             this.processes.Text = "Procesos";
             this.processes.Click += new System.EventHandler(this.tabPage2_Click);
             this.processes.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.tabPage2_PreviewKeyDown);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(604, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 16);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Quantum:";
+            // 
+            // quantLbl
+            // 
+            this.quantLbl.AutoSize = true;
+            this.quantLbl.Location = new System.Drawing.Point(673, 13);
+            this.quantLbl.Name = "quantLbl";
+            this.quantLbl.Size = new System.Drawing.Size(0, 16);
+            this.quantLbl.TabIndex = 23;
+            this.quantLbl.Click += new System.EventHandler(this.label5_Click_2);
+            // 
+            // quantInput
+            // 
+            this.quantInput.Location = new System.Drawing.Point(431, 80);
+            this.quantInput.Name = "quantInput";
+            this.quantInput.Size = new System.Drawing.Size(166, 22);
+            this.quantInput.TabIndex = 22;
+            // 
+            // lblQuant
+            // 
+            this.lblQuant.AutoSize = true;
+            this.lblQuant.Location = new System.Drawing.Point(431, 61);
+            this.lblQuant.Name = "lblQuant";
+            this.lblQuant.Size = new System.Drawing.Size(60, 16);
+            this.lblQuant.TabIndex = 21;
+            this.lblQuant.Text = "Quantum";
             // 
             // inputNumProcesses
             // 
@@ -269,6 +393,8 @@
             // 
             this.groupBoxInProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxInProgress.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxInProgress.Controls.Add(this._lblSizeProcess);
+            this.groupBoxInProgress.Controls.Add(this._sizeProcess);
             this.groupBoxInProgress.Controls.Add(this._lblnewProcesses);
             this.groupBoxInProgress.Controls.Add(this._newProcesses);
             this.groupBoxInProgress.Controls.Add(this._contLotesOutput);
@@ -286,6 +412,25 @@
             this.groupBoxInProgress.TabIndex = 10;
             this.groupBoxInProgress.TabStop = false;
             this.groupBoxInProgress.Text = "Proceso en ejecución";
+            // 
+            // _lblSizeProcess
+            // 
+            this._lblSizeProcess.AutoSize = true;
+            this._lblSizeProcess.Location = new System.Drawing.Point(160, 161);
+            this._lblSizeProcess.Name = "_lblSizeProcess";
+            this._lblSizeProcess.Size = new System.Drawing.Size(14, 16);
+            this._lblSizeProcess.TabIndex = 19;
+            this._lblSizeProcess.Text = "0";
+            // 
+            // _sizeProcess
+            // 
+            this._sizeProcess.AutoSize = true;
+            this._sizeProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sizeProcess.Location = new System.Drawing.Point(17, 162);
+            this._sizeProcess.Name = "_sizeProcess";
+            this._sizeProcess.Size = new System.Drawing.Size(130, 16);
+            this._sizeProcess.TabIndex = 18;
+            this._sizeProcess.Text = "Tamaño Proceso:";
             // 
             // _lblnewProcesses
             // 
@@ -536,21 +681,846 @@
             this.columnHeader9.Text = "Servicio";
             this.columnHeader9.Width = 82;
             // 
-            // lblQuant
+            // tabPage
             // 
-            this.lblQuant.AutoSize = true;
-            this.lblQuant.Location = new System.Drawing.Point(431, 61);
-            this.lblQuant.Name = "lblQuant";
-            this.lblQuant.Size = new System.Drawing.Size(60, 16);
-            this.lblQuant.TabIndex = 21;
-            this.lblQuant.Text = "Quantum";
+            this.tabPage.Controls.Add(this.marco36);
+            this.tabPage.Controls.Add(this.marco35);
+            this.tabPage.Controls.Add(this.marco30);
+            this.tabPage.Controls.Add(this.marco32);
+            this.tabPage.Controls.Add(this.marco25);
+            this.tabPage.Controls.Add(this.marco34);
+            this.tabPage.Controls.Add(this.marco27);
+            this.tabPage.Controls.Add(this.marco31);
+            this.tabPage.Controls.Add(this.marco29);
+            this.tabPage.Controls.Add(this.marco33);
+            this.tabPage.Controls.Add(this.marco28);
+            this.tabPage.Controls.Add(this.marco18);
+            this.tabPage.Controls.Add(this.marco20);
+            this.tabPage.Controls.Add(this.marco24);
+            this.tabPage.Controls.Add(this.marco22);
+            this.tabPage.Controls.Add(this.marco26);
+            this.tabPage.Controls.Add(this.marco16);
+            this.tabPage.Controls.Add(this.marco6);
+            this.tabPage.Controls.Add(this.marco8);
+            this.tabPage.Controls.Add(this.marco12);
+            this.tabPage.Controls.Add(this.marco10);
+            this.tabPage.Controls.Add(this.marco14);
+            this.tabPage.Controls.Add(this.marco23);
+            this.tabPage.Controls.Add(this.marco11);
+            this.tabPage.Controls.Add(this.marco19);
+            this.tabPage.Controls.Add(this.marco7);
+            this.tabPage.Controls.Add(this.marco21);
+            this.tabPage.Controls.Add(this.marco9);
+            this.tabPage.Controls.Add(this.marco17);
+            this.tabPage.Controls.Add(this.marco5);
+            this.tabPage.Controls.Add(this.marco15);
+            this.tabPage.Controls.Add(this.label37);
+            this.tabPage.Controls.Add(this.marco13);
+            this.tabPage.Controls.Add(this.label38);
+            this.tabPage.Controls.Add(this.label32);
+            this.tabPage.Controls.Add(this.label33);
+            this.tabPage.Controls.Add(this.label34);
+            this.tabPage.Controls.Add(this.label35);
+            this.tabPage.Controls.Add(this.label36);
+            this.tabPage.Controls.Add(this.label27);
+            this.tabPage.Controls.Add(this.label28);
+            this.tabPage.Controls.Add(this.label29);
+            this.tabPage.Controls.Add(this.label30);
+            this.tabPage.Controls.Add(this.label31);
+            this.tabPage.Controls.Add(this.label22);
+            this.tabPage.Controls.Add(this.label23);
+            this.tabPage.Controls.Add(this.label24);
+            this.tabPage.Controls.Add(this.label25);
+            this.tabPage.Controls.Add(this.label26);
+            this.tabPage.Controls.Add(this.label17);
+            this.tabPage.Controls.Add(this.label18);
+            this.tabPage.Controls.Add(this.label19);
+            this.tabPage.Controls.Add(this.label20);
+            this.tabPage.Controls.Add(this.label21);
+            this.tabPage.Controls.Add(this.label16);
+            this.tabPage.Controls.Add(this.label15);
+            this.tabPage.Controls.Add(this.label14);
+            this.tabPage.Controls.Add(this.label13);
+            this.tabPage.Controls.Add(this.label12);
+            this.tabPage.Controls.Add(this.label11);
+            this.tabPage.Controls.Add(this.label10);
+            this.tabPage.Controls.Add(this.label9);
+            this.tabPage.Controls.Add(this.label8);
+            this.tabPage.Controls.Add(this.label7);
+            this.tabPage.Controls.Add(this.marco4);
+            this.tabPage.Controls.Add(this.marco3);
+            this.tabPage.Controls.Add(this.marco2);
+            this.tabPage.Controls.Add(this.marco1);
+            this.tabPage.Controls.Add(this.num4);
+            this.tabPage.Controls.Add(this.num3);
+            this.tabPage.Controls.Add(this.label6);
+            this.tabPage.Controls.Add(this.num2);
+            this.tabPage.Controls.Add(this.num1);
+            this.tabPage.Controls.Add(this.numMarco1);
+            this.tabPage.Location = new System.Drawing.Point(4, 25);
+            this.tabPage.Name = "tabPage";
+            this.tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage.Size = new System.Drawing.Size(1214, 421);
+            this.tabPage.TabIndex = 3;
+            this.tabPage.Text = "Tabla de paginas";
+            this.tabPage.UseVisualStyleBackColor = true;
             // 
-            // quantInput
+            // marco36
             // 
-            this.quantInput.Location = new System.Drawing.Point(431, 80);
-            this.quantInput.Name = "quantInput";
-            this.quantInput.Size = new System.Drawing.Size(166, 22);
-            this.quantInput.TabIndex = 22;
+            this.marco36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco36.Location = new System.Drawing.Point(697, 330);
+            this.marco36.Name = "marco36";
+            this.marco36.Size = new System.Drawing.Size(45, 16);
+            this.marco36.TabIndex = 82;
+            // 
+            // marco35
+            // 
+            this.marco35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco35.Location = new System.Drawing.Point(560, 330);
+            this.marco35.Name = "marco35";
+            this.marco35.Size = new System.Drawing.Size(45, 16);
+            this.marco35.TabIndex = 78;
+            // 
+            // marco30
+            // 
+            this.marco30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco30.Location = new System.Drawing.Point(697, 282);
+            this.marco30.Name = "marco30";
+            this.marco30.Size = new System.Drawing.Size(45, 16);
+            this.marco30.TabIndex = 83;
+            // 
+            // marco32
+            // 
+            this.marco32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco32.Location = new System.Drawing.Point(697, 298);
+            this.marco32.Name = "marco32";
+            this.marco32.Size = new System.Drawing.Size(45, 16);
+            this.marco32.TabIndex = 84;
+            // 
+            // marco25
+            // 
+            this.marco25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco25.Location = new System.Drawing.Point(560, 250);
+            this.marco25.Name = "marco25";
+            this.marco25.Size = new System.Drawing.Size(45, 16);
+            this.marco25.TabIndex = 75;
+            // 
+            // marco34
+            // 
+            this.marco34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco34.Location = new System.Drawing.Point(697, 314);
+            this.marco34.Name = "marco34";
+            this.marco34.Size = new System.Drawing.Size(45, 16);
+            this.marco34.TabIndex = 81;
+            // 
+            // marco27
+            // 
+            this.marco27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco27.Location = new System.Drawing.Point(560, 266);
+            this.marco27.Name = "marco27";
+            this.marco27.Size = new System.Drawing.Size(45, 16);
+            this.marco27.TabIndex = 76;
+            // 
+            // marco31
+            // 
+            this.marco31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco31.Location = new System.Drawing.Point(560, 298);
+            this.marco31.Name = "marco31";
+            this.marco31.Size = new System.Drawing.Size(45, 16);
+            this.marco31.TabIndex = 80;
+            // 
+            // marco29
+            // 
+            this.marco29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco29.Location = new System.Drawing.Point(560, 282);
+            this.marco29.Name = "marco29";
+            this.marco29.Size = new System.Drawing.Size(45, 16);
+            this.marco29.TabIndex = 79;
+            // 
+            // marco33
+            // 
+            this.marco33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco33.Location = new System.Drawing.Point(560, 314);
+            this.marco33.Name = "marco33";
+            this.marco33.Size = new System.Drawing.Size(45, 16);
+            this.marco33.TabIndex = 77;
+            // 
+            // marco28
+            // 
+            this.marco28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco28.Location = new System.Drawing.Point(697, 266);
+            this.marco28.Name = "marco28";
+            this.marco28.Size = new System.Drawing.Size(45, 16);
+            this.marco28.TabIndex = 72;
+            // 
+            // marco18
+            // 
+            this.marco18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco18.Location = new System.Drawing.Point(697, 186);
+            this.marco18.Name = "marco18";
+            this.marco18.Size = new System.Drawing.Size(45, 16);
+            this.marco18.TabIndex = 69;
+            // 
+            // marco20
+            // 
+            this.marco20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco20.Location = new System.Drawing.Point(697, 202);
+            this.marco20.Name = "marco20";
+            this.marco20.Size = new System.Drawing.Size(45, 16);
+            this.marco20.TabIndex = 70;
+            // 
+            // marco24
+            // 
+            this.marco24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco24.Location = new System.Drawing.Point(697, 234);
+            this.marco24.Name = "marco24";
+            this.marco24.Size = new System.Drawing.Size(45, 16);
+            this.marco24.TabIndex = 74;
+            // 
+            // marco22
+            // 
+            this.marco22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco22.Location = new System.Drawing.Point(697, 218);
+            this.marco22.Name = "marco22";
+            this.marco22.Size = new System.Drawing.Size(45, 16);
+            this.marco22.TabIndex = 73;
+            // 
+            // marco26
+            // 
+            this.marco26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco26.Location = new System.Drawing.Point(697, 250);
+            this.marco26.Name = "marco26";
+            this.marco26.Size = new System.Drawing.Size(45, 16);
+            this.marco26.TabIndex = 71;
+            // 
+            // marco16
+            // 
+            this.marco16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco16.Location = new System.Drawing.Point(697, 170);
+            this.marco16.Name = "marco16";
+            this.marco16.Size = new System.Drawing.Size(45, 16);
+            this.marco16.TabIndex = 66;
+            // 
+            // marco6
+            // 
+            this.marco6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco6.Location = new System.Drawing.Point(697, 90);
+            this.marco6.Name = "marco6";
+            this.marco6.Size = new System.Drawing.Size(45, 16);
+            this.marco6.TabIndex = 63;
+            // 
+            // marco8
+            // 
+            this.marco8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco8.Location = new System.Drawing.Point(697, 106);
+            this.marco8.Name = "marco8";
+            this.marco8.Size = new System.Drawing.Size(45, 16);
+            this.marco8.TabIndex = 64;
+            // 
+            // marco12
+            // 
+            this.marco12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco12.Location = new System.Drawing.Point(697, 138);
+            this.marco12.Name = "marco12";
+            this.marco12.Size = new System.Drawing.Size(45, 16);
+            this.marco12.TabIndex = 68;
+            // 
+            // marco10
+            // 
+            this.marco10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco10.Location = new System.Drawing.Point(697, 122);
+            this.marco10.Name = "marco10";
+            this.marco10.Size = new System.Drawing.Size(45, 16);
+            this.marco10.TabIndex = 67;
+            // 
+            // marco14
+            // 
+            this.marco14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco14.Location = new System.Drawing.Point(697, 154);
+            this.marco14.Name = "marco14";
+            this.marco14.Size = new System.Drawing.Size(45, 16);
+            this.marco14.TabIndex = 65;
+            // 
+            // marco23
+            // 
+            this.marco23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco23.Location = new System.Drawing.Point(560, 234);
+            this.marco23.Name = "marco23";
+            this.marco23.Size = new System.Drawing.Size(45, 16);
+            this.marco23.TabIndex = 60;
+            // 
+            // marco11
+            // 
+            this.marco11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco11.Location = new System.Drawing.Point(560, 138);
+            this.marco11.Name = "marco11";
+            this.marco11.Size = new System.Drawing.Size(45, 16);
+            this.marco11.TabIndex = 24;
+            // 
+            // marco19
+            // 
+            this.marco19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco19.Location = new System.Drawing.Point(560, 202);
+            this.marco19.Name = "marco19";
+            this.marco19.Size = new System.Drawing.Size(45, 16);
+            this.marco19.TabIndex = 62;
+            // 
+            // marco7
+            // 
+            this.marco7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco7.Location = new System.Drawing.Point(560, 106);
+            this.marco7.Name = "marco7";
+            this.marco7.Size = new System.Drawing.Size(45, 16);
+            this.marco7.TabIndex = 56;
+            // 
+            // marco21
+            // 
+            this.marco21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco21.Location = new System.Drawing.Point(560, 218);
+            this.marco21.Name = "marco21";
+            this.marco21.Size = new System.Drawing.Size(45, 16);
+            this.marco21.TabIndex = 59;
+            // 
+            // marco9
+            // 
+            this.marco9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco9.Location = new System.Drawing.Point(560, 122);
+            this.marco9.Name = "marco9";
+            this.marco9.Size = new System.Drawing.Size(45, 16);
+            this.marco9.TabIndex = 23;
+            // 
+            // marco17
+            // 
+            this.marco17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco17.Location = new System.Drawing.Point(560, 186);
+            this.marco17.Name = "marco17";
+            this.marco17.Size = new System.Drawing.Size(45, 16);
+            this.marco17.TabIndex = 61;
+            // 
+            // marco5
+            // 
+            this.marco5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco5.Location = new System.Drawing.Point(560, 90);
+            this.marco5.Name = "marco5";
+            this.marco5.Size = new System.Drawing.Size(45, 16);
+            this.marco5.TabIndex = 55;
+            // 
+            // marco15
+            // 
+            this.marco15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco15.Location = new System.Drawing.Point(560, 170);
+            this.marco15.Name = "marco15";
+            this.marco15.Size = new System.Drawing.Size(45, 16);
+            this.marco15.TabIndex = 58;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label37.Location = new System.Drawing.Point(648, 330);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(21, 16);
+            this.label37.TabIndex = 54;
+            this.label37.Text = "36";
+            // 
+            // marco13
+            // 
+            this.marco13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco13.Location = new System.Drawing.Point(560, 154);
+            this.marco13.Name = "marco13";
+            this.marco13.Size = new System.Drawing.Size(45, 16);
+            this.marco13.TabIndex = 57;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label38.Location = new System.Drawing.Point(511, 330);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(21, 16);
+            this.label38.TabIndex = 53;
+            this.label38.Text = "35";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label32.Location = new System.Drawing.Point(648, 314);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(21, 16);
+            this.label32.TabIndex = 52;
+            this.label32.Text = "34";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label33.Location = new System.Drawing.Point(648, 298);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(21, 16);
+            this.label33.TabIndex = 51;
+            this.label33.Text = "32";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label34.Location = new System.Drawing.Point(648, 282);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(21, 16);
+            this.label34.TabIndex = 50;
+            this.label34.Text = "30";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label35.Location = new System.Drawing.Point(648, 266);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(21, 16);
+            this.label35.TabIndex = 49;
+            this.label35.Text = "28";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label36.Location = new System.Drawing.Point(648, 250);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(21, 16);
+            this.label36.TabIndex = 48;
+            this.label36.Text = "26";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label27.Location = new System.Drawing.Point(511, 314);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(21, 16);
+            this.label27.TabIndex = 47;
+            this.label27.Text = "33";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label28.Location = new System.Drawing.Point(511, 298);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(21, 16);
+            this.label28.TabIndex = 46;
+            this.label28.Text = "31";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label29.Location = new System.Drawing.Point(511, 282);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(21, 16);
+            this.label29.TabIndex = 45;
+            this.label29.Text = "29";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label30.Location = new System.Drawing.Point(511, 266);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(21, 16);
+            this.label30.TabIndex = 44;
+            this.label30.Text = "27";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label31.Location = new System.Drawing.Point(511, 250);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(21, 16);
+            this.label31.TabIndex = 43;
+            this.label31.Text = "25";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label22.Location = new System.Drawing.Point(648, 234);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(21, 16);
+            this.label22.TabIndex = 42;
+            this.label22.Text = "24";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label23.Location = new System.Drawing.Point(648, 218);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(21, 16);
+            this.label23.TabIndex = 41;
+            this.label23.Text = "22";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label24.Location = new System.Drawing.Point(648, 202);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(21, 16);
+            this.label24.TabIndex = 40;
+            this.label24.Text = "20";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(648, 186);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(21, 16);
+            this.label25.TabIndex = 39;
+            this.label25.Text = "18";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(648, 170);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(21, 16);
+            this.label26.TabIndex = 38;
+            this.label26.Text = "16";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(511, 234);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(21, 16);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "23";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label18.Location = new System.Drawing.Point(511, 218);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(21, 16);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "21";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label19.Location = new System.Drawing.Point(511, 202);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(21, 16);
+            this.label19.TabIndex = 35;
+            this.label19.Text = "19";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label20.Location = new System.Drawing.Point(511, 186);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(21, 16);
+            this.label20.TabIndex = 34;
+            this.label20.Text = "17";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label21.Location = new System.Drawing.Point(511, 170);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(21, 16);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "15";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(648, 154);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(21, 16);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "14";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(511, 154);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(21, 16);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(648, 138);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(21, 16);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "12";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(511, 138);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(21, 16);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(648, 122);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(21, 16);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "10";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(511, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 16);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(648, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 16);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(511, 106);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 16);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(648, 90);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 16);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(511, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 16);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "5";
+            // 
+            // marco4
+            // 
+            this.marco4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco4.Controls.Add(this.panel11);
+            this.marco4.Controls.Add(this.panel16);
+            this.marco4.Controls.Add(this.panel15);
+            this.marco4.Controls.Add(this.panel12);
+            this.marco4.Controls.Add(this.panel14);
+            this.marco4.Controls.Add(this.panel13);
+            this.marco4.Location = new System.Drawing.Point(697, 74);
+            this.marco4.Name = "marco4";
+            this.marco4.Size = new System.Drawing.Size(45, 16);
+            this.marco4.TabIndex = 21;
+            // 
+            // panel11
+            // 
+            this.panel11.Location = new System.Drawing.Point(0, 96);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(45, 16);
+            this.panel11.TabIndex = 60;
+            // 
+            // panel16
+            // 
+            this.panel16.Location = new System.Drawing.Point(0, 16);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(45, 16);
+            this.panel16.TabIndex = 57;
+            // 
+            // panel15
+            // 
+            this.panel15.Location = new System.Drawing.Point(0, 32);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(45, 16);
+            this.panel15.TabIndex = 58;
+            // 
+            // panel12
+            // 
+            this.panel12.Location = new System.Drawing.Point(0, 64);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(45, 16);
+            this.panel12.TabIndex = 62;
+            // 
+            // panel14
+            // 
+            this.panel14.Location = new System.Drawing.Point(0, 48);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(45, 16);
+            this.panel14.TabIndex = 61;
+            // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(0, 80);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(45, 16);
+            this.panel13.TabIndex = 59;
+            // 
+            // marco3
+            // 
+            this.marco3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco3.Location = new System.Drawing.Point(560, 74);
+            this.marco3.Name = "marco3";
+            this.marco3.Size = new System.Drawing.Size(45, 16);
+            this.marco3.TabIndex = 22;
+            // 
+            // marco2
+            // 
+            this.marco2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco2.Location = new System.Drawing.Point(697, 58);
+            this.marco2.Name = "marco2";
+            this.marco2.Size = new System.Drawing.Size(45, 16);
+            this.marco2.TabIndex = 21;
+            // 
+            // marco1
+            // 
+            this.marco1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.marco1.Location = new System.Drawing.Point(560, 58);
+            this.marco1.Name = "marco1";
+            this.marco1.Size = new System.Drawing.Size(45, 16);
+            this.marco1.TabIndex = 20;
+            // 
+            // num4
+            // 
+            this.num4.AutoSize = true;
+            this.num4.BackColor = System.Drawing.Color.Transparent;
+            this.num4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.num4.Location = new System.Drawing.Point(648, 74);
+            this.num4.Name = "num4";
+            this.num4.Size = new System.Drawing.Size(14, 16);
+            this.num4.TabIndex = 19;
+            this.num4.Text = "4";
+            // 
+            // num3
+            // 
+            this.num3.AutoSize = true;
+            this.num3.BackColor = System.Drawing.Color.Transparent;
+            this.num3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.num3.Location = new System.Drawing.Point(511, 74);
+            this.num3.Name = "num3";
+            this.num3.Size = new System.Drawing.Size(14, 16);
+            this.num3.TabIndex = 18;
+            this.num3.Text = "3";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(622, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "No. Marco";
+            // 
+            // num2
+            // 
+            this.num2.AutoSize = true;
+            this.num2.BackColor = System.Drawing.Color.Transparent;
+            this.num2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.num2.Location = new System.Drawing.Point(648, 58);
+            this.num2.Name = "num2";
+            this.num2.Size = new System.Drawing.Size(14, 16);
+            this.num2.TabIndex = 16;
+            this.num2.Text = "2";
+            // 
+            // num1
+            // 
+            this.num1.AutoSize = true;
+            this.num1.BackColor = System.Drawing.Color.Transparent;
+            this.num1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.num1.Location = new System.Drawing.Point(511, 58);
+            this.num1.Name = "num1";
+            this.num1.Size = new System.Drawing.Size(14, 16);
+            this.num1.TabIndex = 15;
+            this.num1.Text = "1";
+            this.num1.Click += new System.EventHandler(this.label6_Click_2);
+            // 
+            // numMarco1
+            // 
+            this.numMarco1.AutoSize = true;
+            this.numMarco1.BackColor = System.Drawing.Color.Transparent;
+            this.numMarco1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMarco1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.numMarco1.Location = new System.Drawing.Point(485, 42);
+            this.numMarco1.Name = "numMarco1";
+            this.numMarco1.Size = new System.Drawing.Size(78, 16);
+            this.numMarco1.TabIndex = 14;
+            this.numMarco1.Text = "No. Marco";
             // 
             // input_window
             // 
@@ -561,7 +1531,7 @@
             this.Controls.Add(this.ProcessesTable);
             this.KeyPreview = true;
             this.Name = "input_window";
-            this.Text = "Practica 5";
+            this.Text = "Practica 7";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.input_window_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.input_window_KeyPress);
@@ -571,6 +1541,9 @@
             this.groupBoxInProgress.ResumeLayout(false);
             this.groupBoxInProgress.PerformLayout();
             this.processTableTab.ResumeLayout(false);
+            this.tabPage.ResumeLayout(false);
+            this.tabPage.PerformLayout();
+            this.marco4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -630,6 +1603,91 @@
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.TextBox quantInput;
         private System.Windows.Forms.Label lblQuant;
+        private System.Windows.Forms.Label quantLbl;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabPage tabPage;
+        private System.Windows.Forms.Label numMarco1;
+        private System.Windows.Forms.Label num1;
+        private System.Windows.Forms.Label num4;
+        private System.Windows.Forms.Label num3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label num2;
+        private System.Windows.Forms.Panel marco4;
+        private System.Windows.Forms.Panel marco3;
+        private System.Windows.Forms.Panel marco2;
+        private System.Windows.Forms.Panel marco1;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel marco36;
+        private System.Windows.Forms.Panel marco35;
+        private System.Windows.Forms.Panel marco30;
+        private System.Windows.Forms.Panel marco32;
+        private System.Windows.Forms.Panel marco25;
+        private System.Windows.Forms.Panel marco34;
+        private System.Windows.Forms.Panel marco27;
+        private System.Windows.Forms.Panel marco31;
+        private System.Windows.Forms.Panel marco29;
+        private System.Windows.Forms.Panel marco33;
+        private System.Windows.Forms.Panel marco28;
+        private System.Windows.Forms.Panel marco18;
+        private System.Windows.Forms.Panel marco20;
+        private System.Windows.Forms.Panel marco24;
+        private System.Windows.Forms.Panel marco22;
+        private System.Windows.Forms.Panel marco26;
+        private System.Windows.Forms.Panel marco16;
+        private System.Windows.Forms.Panel marco6;
+        private System.Windows.Forms.Panel marco8;
+        private System.Windows.Forms.Panel marco12;
+        private System.Windows.Forms.Panel marco10;
+        private System.Windows.Forms.Panel marco14;
+        private System.Windows.Forms.Panel marco23;
+        private System.Windows.Forms.Panel marco11;
+        private System.Windows.Forms.Panel marco19;
+        private System.Windows.Forms.Panel marco7;
+        private System.Windows.Forms.Panel marco21;
+        private System.Windows.Forms.Panel marco9;
+        private System.Windows.Forms.Panel marco17;
+        private System.Windows.Forms.Panel marco5;
+        private System.Windows.Forms.Panel marco15;
+        private System.Windows.Forms.Panel marco13;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label _lblSizeProcess;
+        private System.Windows.Forms.Label _sizeProcess;
     }
 }
 

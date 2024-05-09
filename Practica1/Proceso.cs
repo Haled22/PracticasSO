@@ -18,6 +18,7 @@ namespace Practica1
         private Label _intLabel;
         private int _indexLabel;
         private int _quantTime;
+        private int _size;
         private DateTime _arrivalTime;//Hora de llegada
         private DateTime _finishTime;//Hora en la que se finalizo
         private TimeSpan _returnTime;//Timepo total desde que llega hasta que termina
@@ -27,7 +28,11 @@ namespace Practica1
         private TimeSpan _RemainingTime;
         private string _status= "Nuevo";
 
-
+        public int Size
+        {
+            get { return _size; }
+            set { _size = value; }
+        }
         public string Status
         {
             get { return _status; }

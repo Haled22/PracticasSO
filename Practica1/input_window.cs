@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
@@ -34,6 +35,8 @@ namespace Practica1
         Queue<Proceso> finishedProcesses = new Queue<Proceso>();
         int longProcess = 0;
         Queue<Label> labelsUsed = new Queue<Label>();
+        Queue<Panel> marcos = new Queue<Panel>();
+        Queue<Color> colours = new Queue<Color>();
         int contLabelToBeUsed = 0;
         bool processStart = true;
         int addedProcesses = 0;
@@ -41,7 +44,10 @@ namespace Practica1
         bool stop = true;
         int quantTime = 3;
         bool showTable = false;
+        bool showMemory = false;
         bool paused = false;
+        int current_size = 2;
+        int normalWidth = 0;
         bool interrupcion = false;
         bool error = false;
         int h, m, s;
@@ -62,12 +68,14 @@ namespace Practica1
             blocked2,
             blocked3,
             timerProcc,
-            contNewProc
+            contNewProc,
+            sizeP
             
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             ProcessesTable.TabPages.Remove(processTableTab);
+           
             _display_options.Enqueue(groupBox1);
             _display_options.Enqueue(groupBox2);
             _display_options.Enqueue(groupBox3);
@@ -84,12 +92,58 @@ namespace Practica1
             labelsUsed.Enqueue(_contLotesOutput);
             labelsUsed.Enqueue(timeTxt);
             
+            
             labelsUsed.Enqueue(blockedTimer1);
             labelsUsed.Enqueue(blockedTimer2);
             labelsUsed.Enqueue(blockedTimer3);
             labelsUsed.Enqueue(processTimertxt);
             labelsUsed.Enqueue(_lblnewProcesses);
-            
+            labelsUsed.Enqueue(_lblSizeProcess);
+
+            marcos.Enqueue(marco1);
+            marcos.Enqueue(marco2);
+            marcos.Enqueue(marco3);
+            marcos.Enqueue(marco4);
+            marcos.Enqueue(marco5);
+            marcos.Enqueue(marco6);
+            marcos.Enqueue(marco7);
+            marcos.Enqueue(marco8);
+            marcos.Enqueue(marco9);
+            marcos.Enqueue(marco10);
+            marcos.Enqueue(marco11);
+            marcos.Enqueue(marco12);
+            marcos.Enqueue(marco13);
+            marcos.Enqueue(marco14);
+            marcos.Enqueue(marco15);
+            marcos.Enqueue(marco16);
+            marcos.Enqueue(marco17);
+            marcos.Enqueue(marco18);
+            marcos.Enqueue(marco19);
+            marcos.Enqueue(marco20);
+            marcos.Enqueue(marco21);
+            marcos.Enqueue(marco22);
+            marcos.Enqueue(marco23);
+            marcos.Enqueue(marco24);
+            marcos.Enqueue(marco25);
+            marcos.Enqueue(marco26);
+            marcos.Enqueue(marco27);
+            marcos.Enqueue(marco28);
+            marcos.Enqueue(marco29);
+            marcos.Enqueue(marco30);
+            marcos.Enqueue(marco31);
+            marcos.Enqueue(marco32);
+            marcos.Enqueue(marco33);
+            marcos.Enqueue(marco34);
+            marcos.Enqueue(marco35);
+            marcos.Enqueue(marco36);
+            normalWidth = marcos.First().Width;
+            colours.Enqueue(Color.Black);
+            colours.Enqueue(Color.Pink);
+            colours.Enqueue(Color.Red);
+            colours.Enqueue(Color.Blue);
+            colours.Enqueue(Color.Green);
+           
+            ProcessesTable.TabPages.Remove(tabPage);
             //labelsUsed.Enqueue(labelProcesosInput);
 
 
@@ -137,13 +191,24 @@ namespace Practica1
             b.Invoke((MethodInvoker)(() => b.Size = new Size(b.Size.Width, amount)));
             
         }
+
         private void setText(Label l, String s)//Funcion para facilitar los ajustes de los labels
         {
             l.Invoke((MethodInvoker)(() => l.Text = s));
 
         }
+        private void setSize(Panel p, int s)//Funcion para facilitar los ajustes de los labels
+        {
+            
+            p.Invoke((MethodInvoker)(() => p.Width = s));
+
+        }
+        private void setColour(Panel p,Color c) {  
+            p.Invoke((MethodInvoker)(() => p.BackColor = c));
+        }
         private void FillList() // Se añaden procesos a una lista
         {
+  
             //Esta parte se debera quitar en algun momento
             Random random = new Random();
             if (number_processes == 0)
@@ -158,9 +223,13 @@ namespace Practica1
 
             for (int i = 0; i < number_processes; i++)
             {
+               
+                
                 _Procesos.Enqueue(new Proceso());
+               
                 _Procesos.ElementAt(i).TimeMax = random.Next(7, 18);
                 _Procesos.ElementAt(i).Id = i.ToString();
+                _Procesos.ElementAt(i).Size = random.Next(1, 80);
                 _Procesos.ElementAt(i).OpName = ""+random.Next(0, 100) + _operaciones[random.Next(0, 3)] + random.Next(0, 100);
                 _Procesos.ElementAt(i).QuantTime =quantTime;
                 System.Console.WriteLine(quantTime);
@@ -218,11 +287,13 @@ namespace Practica1
             {
                 
 
-                if (_lotes.Count + interruptedProcesses.Count < 3 && _Procesos.Count > 0)
+                if (_lotes.Count + interruptedProcesses.Count < 3 && _Procesos.Count > 0 && current_size+_Procesos.First().Size < 170)
                 {
-                    for (int i = 0; _lotes.Count + interruptedProcesses.Count < 3 && _Procesos.Count > 0; i++)
+                    for (int i = 0; _lotes.Count + interruptedProcesses.Count < 3 && current_size + _Procesos.First().Size < 170 && _Procesos.Count > 0; i++)
                     {
+                        
                         _lotes.Enqueue(_Procesos.Dequeue());
+                        current_size += _lotes.Last().Size;
                         if (availableOptions.Count > 0)
                         {
                             _lotes.Last().IntLabel = availableOptions.First().IntLabel;
@@ -239,6 +310,7 @@ namespace Practica1
                         {
                             reSize(_lotes.Last().GBox, _lotes.Last().TimeMax * 10 + 10);
                         }
+
 
                     }
 
@@ -324,7 +396,7 @@ namespace Practica1
                         //Para motivos de pruebas lo tengo en 100 pero deberia ser 1000 <---    
                     });
                     _lotes.First().ServiceTime = DateTime.Now - _lotes.First().ArrivalTime;
-                    System.Console.WriteLine(DateTime.Now - _lotes.First().ArrivalTime);
+                    System.Console.WriteLine(current_size);
                     _lotes.First().RemainingTime= TimeSpan.FromSeconds(initialValue);
                 }
                 
@@ -373,8 +445,8 @@ namespace Practica1
                         {
                             finishedProcesses.First().GBox.BackColor = Color.DimGray;
                         }
-                        
-                        
+
+                        current_size -= _lotes.First().Size;
                         SetList(_lotes.Dequeue());
                        
 
@@ -428,6 +500,7 @@ namespace Practica1
                         _lotes.First().TimeMax -= quantTime;
                         _lotes.First().QuantTime = quantTime;
                         _lotes.First().GBox.BackColor = Color.LimeGreen;
+
                         _lotes.Enqueue(_lotes.Dequeue());
 
                         if (_lotes.First().TimeMax > 15)
@@ -464,6 +537,7 @@ namespace Practica1
             initialValue = _lotes.ElementAt(0).TimeMax;
             longProcess = initialValue / 15 + 1;
             changeLabel(initialValue.ToString(), _labelsUsedEnum.timerProcc);
+            changeLabel(_lotes.ElementAt(0).Size.ToString(), _labelsUsedEnum.sizeP);
             return initialValue;
         }
 
@@ -475,7 +549,7 @@ namespace Practica1
         private void startBtn(object sender, EventArgs e)//Boton de comienzo
         {
             // Se comienzan tanto el moviemieto de las barras como en reloj
-            if(stop)
+            if(stop && showMemory==false && showTable==false)
             {
                 //Se resetea el reloj global
                 h = 0;
@@ -490,6 +564,7 @@ namespace Practica1
                 {
                      quantTime = int.Parse(quantInput.Text);
                 }
+                quantLbl.Text = quantTime.ToString();
                 interruptedProcesses.Clear();
                 finishedProcesses.Clear();
                 FillList();
@@ -647,6 +722,16 @@ namespace Practica1
                     ProcessesTable.TabPages.Remove(processTableTab);
                     showTable = false;
                 }
+                if(showMemory==true)
+                {
+                    foreach(Panel p in marcos)
+                    {
+                        setColour(p, Color.WhiteSmoke);
+                        setSize(p,normalWidth);
+                    }
+                    ProcessesTable.TabPages.Remove(tabPage);
+                    showMemory = false;
+                }
 
             }
             else if (e.KeyChar == (char)Keys.I)
@@ -713,6 +798,104 @@ namespace Practica1
                     }
                 }
             }
+            else if (e.KeyChar == (char)Keys.M)
+            {
+                System.Console.WriteLine(" " + e.KeyChar);
+                if (showTable == false)
+                {
+                    paused = true;
+
+                    showMemory = true;
+                    ProcessesTable.TabPages.Add(tabPage);
+                    int cont = 0;
+                    int blueCount = 0;
+                    Queue<Proceso> newLotes = new Queue<Proceso>(_lotes.OrderBy(x => Int32.Parse(x.Id)));
+                    foreach(Proceso p in interruptedProcesses)
+                    {
+                        newLotes.Enqueue(p);
+                    }
+                    newLotes = new Queue<Proceso>(newLotes.OrderBy(x => Int32.Parse(x.Id)));
+                    Color c = Color.Blue;
+                    while (cont<marcos.Count)
+                    {
+                        if (cont > 1 && cont <3)
+                        {
+                           
+                            foreach (Proceso p in newLotes)
+                            {
+                                if(p.Id==_lotes.First().Id)
+                                {
+                                    c = Color.Red;
+                                }
+                               
+                                else
+                                {
+                                    if(blueCount>0)
+                                    {
+                                        c = Color.Aquamarine;
+                                    }
+                                    else
+                                    {
+                                        c = Color.Blue;
+                                        blueCount += 1;
+                                    }
+                                    
+                                }
+                                foreach(Proceso intProcess in interruptedProcesses)
+                                {
+                                    if(intProcess.Id ==p.Id)
+                                    {
+                                        
+                                        c = Color.Purple;
+                                       
+                                    }
+                                }
+                                float x = p.Size/5;
+                                float y = p.Size % 5;
+                                for (int i = 0; i < x; i++)
+                                {
+                                    if(cont<marcos.Count)
+                                    {
+                                        //something
+                                        setColour(marcos.ElementAt(cont),c);
+                                        cont += 1;
+                                    }
+                                    
+                                }
+                                if(y!=0 && cont<marcos.Count)
+                                {
+                                    setSize(marcos.ElementAt(cont), marcos.ElementAt(cont).Width / 5 * (int)y);
+                                    setColour(marcos.ElementAt(cont),c);
+                                    cont++;
+                                }
+
+                                
+
+
+                            }
+                        }
+                        else if (cont==0 || cont==1)
+                        {
+                            setColour(marcos.ElementAt(cont),Color.Black);
+                            if(cont==1)
+                            {
+                                colours.Enqueue(colours.Dequeue());
+                            }
+                            
+                        }
+                        else
+                        {
+                            setColour(marcos.ElementAt(cont), Color.WhiteSmoke);
+                        }
+                        cont += 1;
+
+
+                    }
+
+
+                   
+                }
+            }
         }
 
         private void tabPage2_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -746,6 +929,16 @@ namespace Practica1
 
 
             
+        }
+
+        private void label5_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click_2(object sender, EventArgs e)
+        {
+
         }
 
         private void processTimerset()

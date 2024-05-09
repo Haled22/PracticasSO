@@ -98,3 +98,13 @@ C:\Users\haled\2024A\SO\Practica5Tryingshtuff\Practica1\obj\Debug\Practica1.cspr
 C:\Users\haled\2024A\SO\Practica5Tryingshtuff\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
 C:\Users\haled\2024A\SO\Practica5Tryingshtuff\Practica1\obj\Debug\Practica1.exe
 C:\Users\haled\2024A\SO\Practica5Tryingshtuff\Practica1\obj\Debug\Practica1.pdb
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.csproj.AssemblyReference.cache
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.input_window.resources
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.Properties.Resources.resources
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.csproj.GenerateResource.cache
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.exe
+C:\Users\haled\2024A\SO\Practica7\Practica1\obj\Debug\Practica1.pdb
+C:\Users\haled\2024A\SO\Practica7\Practica1\bin\Debug\Practica1.exe.config
+C:\Users\haled\2024A\SO\Practica7\Practica1\bin\Debug\Practica1.exe
+C:\Users\haled\2024A\SO\Practica7\Practica1\bin\Debug\Practica1.pdb
